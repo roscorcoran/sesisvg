@@ -1,6 +1,6 @@
 sesisvg
 =======
-__se__rver __si__de svg
+server side svg
 ##Installation
 ```bash
 npm install
