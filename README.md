@@ -1,4 +1,11 @@
 sesisvg
 =======
-
-server side svg
+**se**rver **si**de svg
+##Installation
+```bash
+npm install
+```
+##Running
+```bash
+node index.js
+```
