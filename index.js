@@ -1,7 +1,50 @@
+//var http=require('http');
 //D3
 var d3 = require('d3');
 var barChart = require('./barchart');
 var fs = require('fs');
+
+/*
+//http://eng.wealthfront.com/2011/12/converting-dynamic-svg-to-png-with.html
+var jsdom = require('jsdom');
+var scripts = [
+    "file://"+__dirname+"/d3.min.js",
+    "file://"+__dirname+"/d3.layout.min.js",
+    "file://"+__dirname+"/nv.d3.min.js",
+    "file://"+__dirname+"/bar.js"
+  ];
+  htmlStub = '<!DOCTYPE html><div id="pie" style="width:'+w+'px;height:'+h+'px;"></div>';
+
+  http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'image/png'});
+    var convert = child_proc.spawn("convert", ["svg:", "png:-"]);
+    var values = (url.parse(req.url, true).query['values'] || ".5,.5")
+          .split(",")
+          .map(function(v){return parseFloat(v)});
+
+    convert.stdout.on('data', function (data) {
+      res.write(data);
+    });
+    convert.on('exit', function(code) {
+      res.end();
+    });
+
+    jsdom.env({
+      features:{QuerySelector:true},
+      html: htmlStub,
+      scripts: scripts,
+      done: function(errors, window) {
+        var svgsrc = window.insertPie("#pie", w, h, values).innerHTML;
+        //jsdom's domToHTML will lowercase element names
+        svgsrc = svgsrc.replace(/radialgradient/g,'radialGradient');
+        convert.stdin.write(svgsrc);
+        convert.stdin.end();
+      }
+    });
+  }).listen(8089, "0.0.0.0");
+*/
+
+
 
 var getBarChart = function (params) {
   var chart = barChart()
