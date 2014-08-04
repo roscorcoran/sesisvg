@@ -1,0 +1,28 @@
+{
+  "name": "sesisvg",
+  "version": "0.0.1",
+  "description": "Server side SVG using D3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roscorcoran/sesisvg.git"
+  },
+  "keywords": [
+    "d3",
+    "svg",
+    "serverside"
+  ],
+  "author": "Ros Corcoran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roscorcoran/sesisvg/issues"
+  },
+  "homepage": "https://github.com/roscorcoran/sesisvg",
+  "dependencies": {
+    "d3": "^3.4.11",
+    "jsdom": "^0.11.1"
+  }
+}
